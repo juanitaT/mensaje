@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "991528655640",
+    "project_id": "mensajes-36302",
+    "storage_bucket": "mensajes-36302.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:991528655640:android:68d1c7b2c00c3c3a325c6d",
+        "android_client_info": {
+          "package_name": "com.example.mensaje"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBXIlmk0B2aR2Mqr0DQFbabFPpcQ4xT2vs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
