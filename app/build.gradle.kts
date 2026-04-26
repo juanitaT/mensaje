@@ -1,20 +1,17 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.compose)
+    alias(libs.plugins.google.services)
 }
 
 android {
     namespace = "com.example.mensaje"
-    compileSdk {
-        version = release(36) {
-            minorApiLevel = 1
-        }
-    }
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.example.mensaje"
         minSdk = 24
-        targetSdk = 36
+        targetSdk = 35
         versionCode = 1
         versionName = "1.0"
 
@@ -55,4 +52,13 @@ dependencies {
     androidTestImplementation(libs.androidx.compose.ui.test.junit4)
     debugImplementation(libs.androidx.compose.ui.tooling)
     debugImplementation(libs.androidx.compose.ui.test.manifest)
+
+    // Firebase BOM
+    implementation(platform("com.google.firebase:firebase-bom:33.9.0"))
+
+    // FCM
+    implementation("com.google.firebase:firebase-messaging")
+
+    // Analytics (opcional)
+    implementation("com.google.firebase:firebase-analytics")
 }
